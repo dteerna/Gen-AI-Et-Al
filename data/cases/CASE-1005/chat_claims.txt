@@ -1,0 +1,2 @@
+[2024-05-30 09:00] GLCC Claims: notified the cargo insurer of the Northstar Lines container loss, reference filed.
+[2024-05-30 09:05] GLCC Ops Manager: great. Claim value stays at USD 100,000 per the invoice.

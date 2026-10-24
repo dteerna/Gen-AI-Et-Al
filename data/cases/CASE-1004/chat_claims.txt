@@ -1,0 +1,2 @@
+[2024-06-13 10:00] GLCC Claims: notified the cargo insurer of the ACME Freight container loss, reference filed.
+[2024-06-13 10:05] GLCC Ops Manager: great. Claim value stays at USD 30,000 per the invoice.

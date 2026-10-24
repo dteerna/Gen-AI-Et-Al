@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-1010",
+  "case_type": "customs_hold",
+  "vendor": "ACME Freight",
+  "shipment_date": "2024-10-28",
+  "port": "Northgate",
+  "claim_amount": 0,
+  "currency": "USD",
+  "containers": 1,
+  "detention_charge_per_day": 600
+}

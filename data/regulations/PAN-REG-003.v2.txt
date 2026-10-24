@@ -1,0 +1,14 @@
+PORT AUTHORITY OF NORTHGATE (PAN)
+Regulation ID: PAN-REG-003
+Version: 2
+Authority: Port Authority of Northgate (PAN)
+Port: Northgate
+Topic: customs_compliance_hold
+Effective Date: 2025-01-15
+Supersedes: PAN-REG-003 v1
+
+Section 1. Required documents. Cargo placed on a customs compliance hold must be supported by a commercial invoice, a certificate of origin, and a packing list.
+
+Section 2. Submission deadline. The required documents must be submitted within 5 business days of the hold notice.
+
+Section 3. Release. A hold is released within 2 business days of a complete submission.

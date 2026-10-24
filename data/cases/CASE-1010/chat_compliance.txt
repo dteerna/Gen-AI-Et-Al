@@ -1,0 +1,3 @@
+[2024-11-05 08:40] GLCC Compliance: the packing list was missed by our export team, it is our error not the carrier's.
+[2024-11-15 13:50] GLCC Compliance: corrected packing list submitted to the port today.
+[2024-11-15 14:00] Port Agent: submission received, file now complete.

@@ -1,0 +1,11 @@
+PORT AUTHORITY OF NORTHGATE (PAN)
+Regulation ID: PAN-REG-012
+Version: 1
+Authority: Port Authority of Northgate (PAN)
+Port: Northgate
+Topic: port_closure
+Effective Date: 2023-06-01
+
+Section 1. Declaration. Port closures due to weather or security are declared by the Harbor Master through a public written notice stating the time the closure takes effect.
+
+Section 2. Reopening. Reopening is announced by a separate public notice.

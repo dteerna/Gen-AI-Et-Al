@@ -1,0 +1,4 @@
+# Optional: Azure OpenAI (LLM mode). Not needed for the deterministic offline mode.
+-r requirements.txt
+openai>=1.40
+azure-identity>=1.17

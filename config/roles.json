@@ -1,0 +1,12 @@
+{
+  "_comment": "Demo role directory. In production this comes from Microsoft Entra ID groups (see docs/AZURE_DEPLOYMENT.md); never trust a role claimed in a request body.",
+  "directory": {
+    "u-coord1": ["logistics_coordinator"],
+    "u-uw1": ["underwriter"],
+    "u-uw2": ["underwriter"],
+    "u-sr1": ["senior_underwriter"],
+    "u-legal1": ["legal_counsel"],
+    "u-comp1": ["compliance_officer"],
+    "u-viewer": []
+  }
+}

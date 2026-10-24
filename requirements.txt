@@ -1,0 +1,2 @@
+# Runtime: one dependency. Everything else is the Python standard library.
+pypdf>=4.0

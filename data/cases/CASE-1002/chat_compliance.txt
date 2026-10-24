@@ -1,0 +1,3 @@
+[2025-02-03 12:10] GLCC Compliance: the certificate of origin was missed by our export team, it is our error not the carrier's.
+[2025-02-04 09:00] GLCC Compliance: supplemental certificate of origin has been issued and submitted to the port today.
+[2025-02-04 09:30] Port Agent: submission received, file now complete.

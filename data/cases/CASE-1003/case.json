@@ -1,0 +1,10 @@
+{
+  "case_id": "CASE-1003",
+  "case_type": "vessel_delay",
+  "vendor": "ACME Freight",
+  "shipment_date": "2024-08-05",
+  "port": "Northgate",
+  "claim_amount": 40000,
+  "currency": "USD",
+  "containers": 1
+}

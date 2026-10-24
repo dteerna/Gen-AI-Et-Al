@@ -1,0 +1,11 @@
+From: agent@northgate-port.example
+To: compliance@glcc.example
+Subject: Customs compliance hold notice
+Date: Mon, 03 Feb 2025 10:00:00 +0000
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Container ACMU-9020 has been placed on a customs compliance hold. The file co=
+ntains a commercial invoice and a packing list but no certificate of origin. =
+Detention charges accrue at USD 600 per day while the hold remains.

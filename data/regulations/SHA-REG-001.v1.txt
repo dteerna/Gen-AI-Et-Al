@@ -1,0 +1,11 @@
+SOUTHHAVEN HARBOR AUTHORITY (SHA)
+Regulation ID: SHA-REG-001
+Version: 1
+Authority: Southhaven Harbor Authority (SHA)
+Port: Southhaven
+Topic: customs_compliance_hold
+Effective Date: 2023-01-10
+
+Section 1. Required documents. Cargo on a customs hold requires a commercial invoice and a bill of lading.
+
+Section 2. Submission deadline. The required documents must be submitted within 7 business days of the hold notice.

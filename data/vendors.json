@@ -1,0 +1,39 @@
+{
+  "vendors": [
+    {
+      "key": "ACME",
+      "name": "ACME Freight",
+      "aliases": [
+        "ACME",
+        "Acme Freight Ltd",
+        "ACME Freight Ltd.",
+        "acme-freight"
+      ]
+    },
+    {
+      "key": "NORTHSTAR",
+      "name": "Northstar Lines",
+      "aliases": [
+        "Northstar",
+        "Northstar Lines Inc",
+        "NSL"
+      ]
+    },
+    {
+      "key": "ZENITH",
+      "name": "Zenith Cargo",
+      "aliases": [
+        "Zenith",
+        "Zenith Cargo LLC"
+      ]
+    },
+    {
+      "key": "ORION",
+      "name": "Orion Shipping",
+      "aliases": [
+        "Orion",
+        "Orion Shipping Co"
+      ]
+    }
+  ]
+}

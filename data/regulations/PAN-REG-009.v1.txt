@@ -1,0 +1,11 @@
+PORT AUTHORITY OF NORTHGATE (PAN)
+Regulation ID: PAN-REG-009
+Version: 1
+Authority: Port Authority of Northgate (PAN)
+Port: Northgate
+Topic: vessel_detention
+Effective Date: 2023-06-01
+
+Section 1. Release after inspection. A vessel detained for a safety inspection may be released after the master submits the inspection remediation report.
+
+Section 2. Detention charges. Detention charges accrue from the time of the detention notice.

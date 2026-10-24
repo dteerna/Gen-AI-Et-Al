@@ -1,0 +1,3 @@
+# Only needed to REGENERATE the sample PDFs (scripts/make_sample_data.py). The generated files are committed.
+-r requirements.txt
+reportlab>=4.0

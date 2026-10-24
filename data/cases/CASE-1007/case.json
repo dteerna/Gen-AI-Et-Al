@@ -1,0 +1,10 @@
+{
+  "case_id": "CASE-1007",
+  "case_type": "freight_damage",
+  "vendor": "Orion Shipping",
+  "shipment_date": "2024-07-01",
+  "port": "Northgate",
+  "claim_amount": 60000,
+  "currency": "USD",
+  "containers": 1
+}

@@ -1,0 +1,53 @@
+name: Deploy to Azure Container Apps
+
+# NOT TESTED by the author (needs an Azure subscription). One-time setup is described in docs/AZURE_DEPLOYMENT.md:
+# a federated credential on an Entra app registration for this repository, and repository variables
+# AZURE_CLIENT_ID, AZURE_TENANT_ID, AZURE_SUBSCRIPTION_ID, ACR_NAME, RESOURCE_GROUP, CONTAINER_APP.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  id-token: write        # lets the job exchange its GitHub OIDC token for Azure credentials; no stored secrets
+
+concurrency:
+  group: azure-deploy
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    environment: production        # add required reviewers on this environment for a manual approval gate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+      - name: Build the image in Azure Container Registry
+        run: az acr build -r "${{ vars.ACR_NAME }}" -t "glcc-exceptions:${{ github.sha }}" .
+      - name: Roll out the new revision
+        run: |
+          az containerapp update -n "${{ vars.CONTAINER_APP }}" -g "${{ vars.RESOURCE_GROUP }}" \
+            --image "${{ vars.ACR_NAME }}.azurecr.io/glcc-exceptions:${{ github.sha }}"
+      - name: Smoke test
+        run: |
+          FQDN=$(az containerapp show -n "${{ vars.CONTAINER_APP }}" -g "${{ vars.RESOURCE_GROUP }}" --query properties.configuration.ingress.fqdn -o tsv)
+          for i in 1 2 3 4 5 6; do
+            if curl -fsS "https://$FQDN/health"; then exit 0; fi
+            sleep 10
+          done
+          echo "health check failed" >&2; exit 1

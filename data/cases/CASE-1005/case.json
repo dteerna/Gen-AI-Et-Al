@@ -1,0 +1,10 @@
+{
+  "case_id": "CASE-1005",
+  "case_type": "freight_damage",
+  "vendor": "Northstar Lines",
+  "shipment_date": "2024-05-15",
+  "port": "Northgate",
+  "claim_amount": 100000,
+  "currency": "USD",
+  "containers": 1
+}
